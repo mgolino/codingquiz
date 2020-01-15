@@ -15,8 +15,26 @@ var itemsCorrect =0;
     if (questionThree === "answer3"){
         itemsCorrect++;
     }
+   
+    
+    
+    var results = ["Nice Work, you got all correct!", "I know you can do better!"];
+
+var yourResults;
+
+    if (itemsCorrect === 3 ) {
+        yourResults = 0;
+    }
+    else {
+            yourResults =1;
+        }
+    
+
+    document.getElementById("results").innerHTML = results[yourResults];
     document.getElementById("submitResponse").style.visibility = "visible";
     document.getElementById("answersCorrect").innerHTML = "You have answered " + itemsCorrect + " correctly!";
     console.log(itemsCorrect);
     console.log(answersCorrect);
+    console.log(results);
 }
+

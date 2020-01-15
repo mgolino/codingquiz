@@ -7,6 +7,15 @@ body{
 
 #submitResponse { 
         visibility: hidden;
-        
+
 }
 
+#markQuiz{
+    padding: 20px, 20px, 20px, 20;
+    background-color: bisque;
+    width: 50%;
+    float: left;
+    margin: 40px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+}
