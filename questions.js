@@ -18,6 +18,8 @@ function startTimer(){
             
             document.getElementById("quizBody").style.visibility = "hidden";
             document.getElementById("markQuizNext2").style.visibility = "hidden";
+            document.getElementById("markQuizNext").style.visibility ="hidden";
+            document.getElementById("markQuizStart").style.visibility ="hidden";
         }
     }, 1000);
 }
