@@ -5,6 +5,23 @@
 // var itemsCorrect =0;
 var itemsCorrect =0;
 
+var countDown = 20;
+
+function startTimer(){
+    var timerGo = setInterval(function() {
+    var timeElement = document.querySelector(".time");    
+        countDown--;
+        timeElement.textContent = countDown + " time remaining for quiz";
+
+        if(countDown === 0) {
+            clearInterval(timerGo);
+            
+            document.getElementById("quizBody").style.visibility = "hidden";
+            document.getElementById("markQuizNext2").style.visibility = "hidden";
+        }
+    }, 1000);
+}
+
 function nextTest() {
     var questionOne = document.markQuizStart.questionOne.value;
     if (questionOne === ".css") {
@@ -53,8 +70,9 @@ var yourResults;
     document.getElementById("submitResponse").style.visibility = "visible";
     
     document.getElementById("answersCorrect").innerHTML = "You have answered " + itemsCorrect + " correctly!";
-    console.log(itemsCorrect);
-    console.log(answersCorrect);
-    console.log(results);
+    // console.log(itemsCorrect);
+    // console.log(answersCorrect);
+    // console.log(results);
 }
 
+// startTimer();
