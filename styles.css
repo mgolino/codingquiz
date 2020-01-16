@@ -1,12 +1,21 @@
 
 h1{
-    margin-left: 40%;
+    /* margin-left: 40%; */
     color: cornflowerblue;
+}
+
+#quizBody{
+    float: left;
+    background-color: cornflowerblue;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 body{
     font-family: 'Oswald', sans-serif;
+    font-size: large;
     background-color: blanchedalmond;
+    padding-left: 25%;
     }
     
 
@@ -17,10 +26,23 @@ body{
 
 #markQuiz{
     padding: 20px, 20px, 20px, 20;
-    background-color: bisque;
+    /* background-color: bisque; */
     width: 50%;
-    float: left;
+    /* float: left; */
+    float: right;
     margin: 40px;
     padding-left: 30px;
-    padding-bottom: 30px;
+    /* padding-bottom: 300px; */
+}
+
+#markQuizNext{
+    visibility: hidden;
+    float: right;
+}
+#markQuiz{
+    visibility: hidden;
+}
+#markQuizNext2{
+    visibility: hidden;
+    
 }

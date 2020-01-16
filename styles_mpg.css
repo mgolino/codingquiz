@@ -1,0 +1,26 @@
+
+h1{
+    margin-left: 40%;
+    color: cornflowerblue;
+}
+
+body{
+    font-family: 'Oswald', sans-serif;
+    background-color: blanchedalmond;
+    }
+    
+
+#submitResponse { 
+        visibility: hidden;
+
+}
+
+#markQuiz{
+    padding: 20px, 20px, 20px, 20;
+    background-color: bisque;
+    width: 50%;
+    float: left;
+    margin: 40px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+}
